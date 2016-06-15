@@ -1,87 +1,17 @@
 {
-    // Soda Theme
-    // "soda_classic_tabs": true,
-    "theme": "Soda Dark 3.sublime-theme",
-
-    // Show folders in the side bar in bold
-    // "bold_folder_labels": true,
-
-    // Set to false to disable detection of tabs vs. spaces on load
-    // "detect_indentation": false,
-
-    // When enabled, anonymised usage data is sent back, assisting Sublime HQ
-    // in making informed decisions about improving Sublime Text. File names
-    // and file contents are never included, but data such as computer
-    // specifications, startup time, installed packages, and edited file types
-    // are. When disabled, telemetry is neither recorded or sent.
-    // A setting of auto will enable telemetry in dev builds, and disable
-    // telemetry in regular builds.
     "enable_telemetry": false,
-
-    // Set to true to ensure the last line of the file ends in a newline
-    // character when saving
     "ensure_newline_at_eof_on_save": true,
-
-    // folder_exclude_patterns and file_exclude_patterns control which files
-    // are listed in folders on the side bar. These can also be set on a per-
-    // project basis.
-    // "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "__pycache__"],
-
-    // Note that the font_face and font_size are overridden in the platform
-    // specific settings file, for example, "Preferences (Linux).sublime-settings".
-    // Because of this, setting them here will have no effect: you must set them
-    // in your User File Preferences.
-    // "font_face": "Ubuntu Mono",
-    // "font_size": 11,
-
-    // List any packages to ignore here. When removing entries from this list,
-    // a restart may be required if the package contains plugins.
+    "font_face": "Ubuntu Mono",
+    "font_size": 11,
     "ignored_packages":
     [
         "Vintage"
     ],
-
-    // Adds whitespace up to the first open bracket when indenting. Requires
-    // auto_indent to be enabled.
-    // "indent_to_bracket": false,
-
-    // Additional spacing at the bottom of each line, in pixels
-    // "line_padding_bottom": 1,
-
-    // Additional spacing at the top of each line, in pixels
-    // "line_padding_top": 1,
-
-    // Preview file contents when clicking on a file in the side bar. Double
-    // clicking or editing the preview will open the file and assign it a tab.
-    // "preview_on_click": false,
-
-    // Set to true to automatically save files when switching to a different file
-    // or application
+    "line_padding_bottom": 0,
+    "preview_on_click": false,
     "save_on_focus_lost": true,
-
-    // By default, shift+tab will only unindent if the selection spans
-    // multiple lines. When pressing shift+tab at other times, it'll insert a
-    // tab character - this allows tabs to be inserted when tab_completion is
-    // enabled. Set this to true to make shift+tab always unindent, instead of
-    // inserting tabs.
     "shift_tab_unindent": true,
-
-    // Makes auto indent a little smarter, e.g., by indenting the next line
-    // after an if statement in C. Requires auto_indent to be enabled.
-    // "smart_indent": true,
-
-    // Set to true to insert spaces when tab is pressed
-    // "translate_tabs_to_spaces": true,
-
-    // Set to true to removing trailing white space on save
+    "theme": "Soda Dark 3.sublime-theme",
     "trim_trailing_white_space_on_save": true,
-
-    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and
-    // backspace insert/delete up to the next tabstop
-    // "use_tab_stops": false,
-
-    // Disables horizontal scrolling if enabled.
-    // May be set to true, false, or "auto", where it will be disabled for
-    // source code, and otherwise enabled.
     "word_wrap": true,
 }

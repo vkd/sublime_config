@@ -1,34 +1,3 @@
 [
-    // based on https://github.com/bohdon/sublimeAlternateVIMNavigation
-    // up down left right i j k l
-    { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true}},
-    { "keys": ["alt+j"], "command": "move", "args": {"by": "characters", "forward": false}},
-    { "keys": ["alt+i"], "command": "move", "args": {"by": "lines", "forward": false}},
-    { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": true}},
-    { "keys": ["alt+p"], "command": "move", "args": {"by": "pages", "forward": false}},
-    { "keys": ["alt+;"], "command": "move", "args": {"by": "pages", "forward": true}},
-
-    // move beginnig/end of line
-    { "keys": ["alt+m"], "command": "move_to", "args": {"to": "bol", "forward": true}},
-    { "keys": ["alt+,"], "command": "move_to", "args": {"to": "eol", "forward": false}},
-
-    // move with words
-    { "keys": ["alt+ctrl+l"], "command": "move", "args": {"by": "words", "forward": true}},
-    { "keys": ["alt+ctrl+j"], "command": "move", "args": {"by": "words", "forward": false}},
-
-    // move and select
-    { "keys": ["alt+shift+l"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true}},
-    { "keys": ["alt+shift+j"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true}},
-    { "keys": ["alt+shift+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true}},
-    { "keys": ["alt+shift+k"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true}},
-    { "keys": ["alt+ctrl+shift+p"], "command": "move", "args": {"by": "pages", "forward": false, "extend": true}},
-    { "keys": ["alt+ctrl+shift+;"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true}},
-
-    // move beginning/end of line and select
-    { "keys": ["alt+shift+m"], "command": "move_to", "args": {"to": "bol", "forward": true, "extend": true}},
-    { "keys": ["alt+shift+,"], "command": "move_to", "args": {"to": "eol", "forward": false, "extend": true}},
-
-    // move and select words
-    { "keys": ["alt+ctrl+shift+l"], "command": "move", "args": {"by": "words", "forward": true, "extend":true}},
-    { "keys": ["alt+ctrl+shift+j"], "command": "move", "args": {"by": "words", "forward": false, "extend":true}}
+    {"keys": ["super+g"], "command": "gotools_goto_def"}
 ]
