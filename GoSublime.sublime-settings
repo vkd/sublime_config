@@ -1,0 +1,32 @@
+{
+	"fmt_cmd": ["goimports"],
+
+	"default_snippets": [
+	{
+		"match": {"global": false, "pkgname": ""},
+		"snippets": [
+			{"text": "package ${default_pkgname}", "title": "", "value": "package ${default_pkgname}\n\n$1\n"}
+		]
+	},
+	{
+		"match": {"global": true, "pkgname": "."},
+		"snippets": [
+			{"text": "func", "title": "func {...}", "value": "func ${1:name}() {\n\n}"},
+			{"text": "var", "title": "var (...)", "value": "var (\n\t$1\n)"},
+			{"text": "const", "title": "const (...)", "value": "const (\n\t$1\n)"},
+			{"text": "init", "title": "func init()", "value": "func init() {\n\t$1\n}"},
+			{"text": "test", "title": "func Test...(){...}", "value": "func Test$1(t *testing.T) {\n\n}"},
+		]
+	},
+	{
+		"match": {"global": true, "pkgname": ".", "has_types": true},
+		"snippets": [
+			{
+				"text": "func (*${typename})",
+				"title": "func (...) {...}",
+				"value": "func (${typename_abbr} *${typename}) ${3:name}() {\n\n}"
+			}
+		]
+	}
+],
+}
