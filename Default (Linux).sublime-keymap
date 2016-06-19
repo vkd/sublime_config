@@ -1,3 +1,4 @@
 [
-    {"keys": ["super+g"], "command": "gotools_goto_def"}
+    {"keys": ["super+g"], "command": "gotools_goto_def"},
+    {"keys": ["super+x"], "command": "scp"},
 ]
