@@ -18,10 +18,18 @@ class ScpCommand(sublime_plugin.WindowCommand):
 
 	def run(self):
 		project_path = self.window.extract_variables()['folder']
-		filepath = self.window.active_view().file_name()
+		settings = self.window.project_data()['settings']['scp']
+		view = self.window.active_view()
+		filepath = view.file_name()
+		view.run_command("save")
 		if filepath.startswith(project_path):
 			cmd = self._get_cmd()
 			print(cmd)
 			err = os.system(cmd)
 			if err:
 				print("Error: ", err)
+				view.set_status("Scp", "Error scp: " + str(err))
+				# self.window.status_message("Error scp: " + str(err))
+			else:
+				view.set_status("Scp", "Ok: send to " + settings['domain'])
+				# self.window.status_message("Ok: send to " + settings['domain'])
