@@ -15,7 +15,7 @@
 			{"text": "var", "title": "var (...)", "value": "var (\n\t$1\n)"},
 			{"text": "const", "title": "const (...)", "value": "const (\n\t$1\n)"},
 			{"text": "init", "title": "func init()", "value": "func init() {\n\t$1\n}"},
-			{"text": "test", "title": "func Test...(){...}", "value": "func Test$1(t *testing.T) {\n\n}"},
+			{"text": "test", "title": "func Test...(){...}", "value": "func Test$1(t *testing.T) {\n\n}"}
 		]
 	},
 	{
@@ -25,8 +25,13 @@
 				"text": "func (*${typename})",
 				"title": "func (...) {...}",
 				"value": "func (${typename_abbr} *${typename}) ${3:name}() {\n\n}"
+			},
+			{
+				"text": "func New...() *${typename}",
+				"title": "func New...() {}",
+				"value": "func New$1() *${typename} {\n\t${typename_abbr} := &${typename}{}\n\treturn ${typename_abbr}\n}"
 			}
 		]
 	}
-],
+]
 }
